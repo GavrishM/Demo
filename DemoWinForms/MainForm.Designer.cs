@@ -28,13 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.MainLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.SuspendLayout();
+            // 
+            // MainLayout
+            // 
+            this.MainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainLayout.Location = new System.Drawing.Point(0, 0);
+            this.MainLayout.Name = "MainLayout";
+            this.MainLayout.Size = new System.Drawing.Size(800, 450);
+            this.MainLayout.TabIndex = 1;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.MainLayout);
+            this.Name = "MainForm";
+            this.Text = "Главная форма";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel MainLayout;
     }
 }
 

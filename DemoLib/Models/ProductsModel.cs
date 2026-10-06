@@ -15,7 +15,6 @@ namespace DemoLib.Models
             data_.Add(new Product { Name = "abc", Category = "Мучные", Count = 10, Price = 100.0, Supplier = "Хлебзавод" });
             data_.Add(new Product { Name = "xyz", Category = "Колбасы", Count = 10000, Price = 500.0, Supplier = "Беларусь" });
         }
-
         public List<Product> Load()
         {
             return data_;

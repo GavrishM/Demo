@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoLib\DemoLib.csproj">
+      <Project>{54f93303-8bfa-4acc-b0e4-4855c627799d}</Project>
+      <Name>DemoLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoUILib\DemoUILib.csproj">
+      <Project>{048a648a-6caf-4b6a-8ceb-f34a68029c3f}</Project>
+      <Name>DemoUILib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
