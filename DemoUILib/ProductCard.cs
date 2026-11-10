@@ -79,13 +79,13 @@ namespace DemoUILib
 
             CategoryLabel.Text = product.Category;
 
-            CountLabel.Text = CountText();
+            QuantityLabel.Text = CountText();
 
             PartsLabel.Text = product.Parts;
-            PriceProductLabel.Text = product.Price.ToString() + " руб.";
+            PriceLabel.Text = product.Price.ToString() + " руб.";
             SupplierLabel.Text = product.Supplier + " | " + product.Name;
 
-            ImagePictureBox.ImageLocation = ImagePath();
+            MainPictureBox.ImageLocation = ImagePath();
 
             BackColor = GetColor();
 
