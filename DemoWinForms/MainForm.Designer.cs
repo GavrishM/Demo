@@ -68,9 +68,11 @@
             // 
             // EmblemToolStripLabel
             // 
+            this.EmblemToolStripLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.EmblemToolStripLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EmblemToolStripLabel.Image = ((System.Drawing.Image)(resources.GetObject("EmblemToolStripLabel.Image")));
             this.EmblemToolStripLabel.Name = "EmblemToolStripLabel";
-            this.EmblemToolStripLabel.Size = new System.Drawing.Size(74, 22);
+            this.EmblemToolStripLabel.Size = new System.Drawing.Size(16, 22);
             this.EmblemToolStripLabel.Text = "Эмблема";
             // 
             // OrganizationNameToolStripLabel
