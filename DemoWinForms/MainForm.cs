@@ -15,6 +15,9 @@ using DemoUILib;
 
 namespace DemoWinForms
 {
+    // цвета
+    // доп фон #D2F6E7
+    // акцентир #70B2AF
     public partial class MainForm : Form
     {
         private ProductsPresenter productsPresenter_;
