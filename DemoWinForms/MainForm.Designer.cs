@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainLayout = new System.Windows.Forms.FlowLayoutPanel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.MainToolStrip = new System.Windows.Forms.ToolStrip();
             this.EmblemToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.OrganizationNameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.UserIconToolStripLabel = new System.Windows.Forms.ToolStripLabel();
@@ -39,7 +39,7 @@
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.CardsTabPage = new System.Windows.Forms.TabPage();
             this.OrdersTabPage = new System.Windows.Forms.TabPage();
-            this.toolStrip1.SuspendLayout();
+            this.MainToolStrip.SuspendLayout();
             this.MainTabControl.SuspendLayout();
             this.CardsTabPage.SuspendLayout();
             this.SuspendLayout();
@@ -52,19 +52,19 @@
             this.MainLayout.Size = new System.Drawing.Size(464, 321);
             this.MainLayout.TabIndex = 1;
             // 
-            // toolStrip1
+            // MainToolStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.EmblemToolStripLabel,
             this.OrganizationNameToolStripLabel,
             this.UserIconToolStripLabel,
             this.UserNameToolStripLabel,
             this.RoleToolStripLabel});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(478, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.MainToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.MainToolStrip.Name = "MainToolStrip";
+            this.MainToolStrip.Size = new System.Drawing.Size(478, 25);
+            this.MainToolStrip.TabIndex = 0;
+            this.MainToolStrip.Text = "toolStrip1";
             // 
             // EmblemToolStripLabel
             // 
@@ -138,12 +138,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 378);
             this.Controls.Add(this.MainTabControl);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.MainToolStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Главная форма";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.MainToolStrip.ResumeLayout(false);
+            this.MainToolStrip.PerformLayout();
             this.MainTabControl.ResumeLayout(false);
             this.CardsTabPage.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -157,7 +157,7 @@
         private System.Windows.Forms.TabControl MainTabControl;
         private System.Windows.Forms.TabPage CardsTabPage;
         private System.Windows.Forms.TabPage OrdersTabPage;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip MainToolStrip;
         private System.Windows.Forms.ToolStripLabel EmblemToolStripLabel;
         private System.Windows.Forms.ToolStripLabel OrganizationNameToolStripLabel;
         private System.Windows.Forms.ToolStripLabel UserIconToolStripLabel;
