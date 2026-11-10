@@ -39,6 +39,7 @@
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.CardsTabPage = new System.Windows.Forms.TabPage();
             this.OrdersTabPage = new System.Windows.Forms.TabPage();
+            this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.MainToolStrip.SuspendLayout();
             this.MainTabControl.SuspendLayout();
             this.CardsTabPage.SuspendLayout();
@@ -47,9 +48,9 @@
             // MainLayout
             // 
             this.MainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainLayout.Location = new System.Drawing.Point(3, 3);
+            this.MainLayout.Location = new System.Drawing.Point(3, 23);
             this.MainLayout.Name = "MainLayout";
-            this.MainLayout.Size = new System.Drawing.Size(464, 321);
+            this.MainLayout.Size = new System.Drawing.Size(464, 301);
             this.MainLayout.TabIndex = 1;
             // 
             // MainToolStrip
@@ -116,6 +117,7 @@
             // CardsTabPage
             // 
             this.CardsTabPage.Controls.Add(this.MainLayout);
+            this.CardsTabPage.Controls.Add(this.SearchTextBox);
             this.CardsTabPage.Location = new System.Drawing.Point(4, 22);
             this.CardsTabPage.Name = "CardsTabPage";
             this.CardsTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -129,10 +131,18 @@
             this.OrdersTabPage.Location = new System.Drawing.Point(4, 22);
             this.OrdersTabPage.Name = "OrdersTabPage";
             this.OrdersTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.OrdersTabPage.Size = new System.Drawing.Size(792, 399);
+            this.OrdersTabPage.Size = new System.Drawing.Size(470, 327);
             this.OrdersTabPage.TabIndex = 1;
             this.OrdersTabPage.Text = "Заказы";
             this.OrdersTabPage.UseVisualStyleBackColor = true;
+            // 
+            // SearchTextBox
+            // 
+            this.SearchTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SearchTextBox.Location = new System.Drawing.Point(3, 3);
+            this.SearchTextBox.Name = "SearchTextBox";
+            this.SearchTextBox.Size = new System.Drawing.Size(464, 20);
+            this.SearchTextBox.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -148,6 +158,7 @@
             this.MainToolStrip.PerformLayout();
             this.MainTabControl.ResumeLayout(false);
             this.CardsTabPage.ResumeLayout(false);
+            this.CardsTabPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,6 +176,7 @@
         private System.Windows.Forms.ToolStripLabel UserIconToolStripLabel;
         private System.Windows.Forms.ToolStripLabel UserNameToolStripLabel;
         private System.Windows.Forms.ToolStripLabel RoleToolStripLabel;
+        private System.Windows.Forms.TextBox SearchTextBox;
     }
 }
 
