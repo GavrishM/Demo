@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.EmblemToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.OrganizationNameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.UserIconToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.UserNameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.RoleToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.CardsTabPage = new System.Windows.Forms.TabPage();
             this.OrdersTabPage = new System.Windows.Forms.TabPage();
-            this.EmblemToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.OrganizationNameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.RoleToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.UserNameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.UserIconToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.MainTabControl.SuspendLayout();
             this.CardsTabPage.SuspendLayout();
@@ -48,7 +49,7 @@
             this.MainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainLayout.Location = new System.Drawing.Point(3, 3);
             this.MainLayout.Name = "MainLayout";
-            this.MainLayout.Size = new System.Drawing.Size(786, 393);
+            this.MainLayout.Size = new System.Drawing.Size(464, 321);
             this.MainLayout.TabIndex = 1;
             // 
             // toolStrip1
@@ -61,9 +62,43 @@
             this.RoleToolStripLabel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(478, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // EmblemToolStripLabel
+            // 
+            this.EmblemToolStripLabel.Image = ((System.Drawing.Image)(resources.GetObject("EmblemToolStripLabel.Image")));
+            this.EmblemToolStripLabel.Name = "EmblemToolStripLabel";
+            this.EmblemToolStripLabel.Size = new System.Drawing.Size(74, 22);
+            this.EmblemToolStripLabel.Text = "Эмблема";
+            // 
+            // OrganizationNameToolStripLabel
+            // 
+            this.OrganizationNameToolStripLabel.Name = "OrganizationNameToolStripLabel";
+            this.OrganizationNameToolStripLabel.Size = new System.Drawing.Size(133, 22);
+            this.OrganizationNameToolStripLabel.Text = "Название организации";
+            // 
+            // UserIconToolStripLabel
+            // 
+            this.UserIconToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.UserIconToolStripLabel.Name = "UserIconToolStripLabel";
+            this.UserIconToolStripLabel.Size = new System.Drawing.Size(48, 22);
+            this.UserIconToolStripLabel.Text = "Иконка";
+            // 
+            // UserNameToolStripLabel
+            // 
+            this.UserNameToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.UserNameToolStripLabel.Name = "UserNameToolStripLabel";
+            this.UserNameToolStripLabel.Size = new System.Drawing.Size(34, 22);
+            this.UserNameToolStripLabel.Text = "ФИО";
+            // 
+            // RoleToolStripLabel
+            // 
+            this.RoleToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.RoleToolStripLabel.Name = "RoleToolStripLabel";
+            this.RoleToolStripLabel.Size = new System.Drawing.Size(34, 22);
+            this.RoleToolStripLabel.Text = "Роль";
             // 
             // MainTabControl
             // 
@@ -73,7 +108,7 @@
             this.MainTabControl.Location = new System.Drawing.Point(0, 25);
             this.MainTabControl.Name = "MainTabControl";
             this.MainTabControl.SelectedIndex = 0;
-            this.MainTabControl.Size = new System.Drawing.Size(800, 425);
+            this.MainTabControl.Size = new System.Drawing.Size(478, 353);
             this.MainTabControl.TabIndex = 1;
             // 
             // CardsTabPage
@@ -82,7 +117,7 @@
             this.CardsTabPage.Location = new System.Drawing.Point(4, 22);
             this.CardsTabPage.Name = "CardsTabPage";
             this.CardsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.CardsTabPage.Size = new System.Drawing.Size(792, 399);
+            this.CardsTabPage.Size = new System.Drawing.Size(470, 327);
             this.CardsTabPage.TabIndex = 0;
             this.CardsTabPage.Text = "Карточки";
             this.CardsTabPage.UseVisualStyleBackColor = true;
@@ -97,46 +132,14 @@
             this.OrdersTabPage.Text = "Заказы";
             this.OrdersTabPage.UseVisualStyleBackColor = true;
             // 
-            // EmblemToolStripLabel
-            // 
-            this.EmblemToolStripLabel.Name = "EmblemToolStripLabel";
-            this.EmblemToolStripLabel.Size = new System.Drawing.Size(58, 22);
-            this.EmblemToolStripLabel.Text = "Эмблема";
-            // 
-            // OrganizationNameToolStripLabel
-            // 
-            this.OrganizationNameToolStripLabel.Name = "OrganizationNameToolStripLabel";
-            this.OrganizationNameToolStripLabel.Size = new System.Drawing.Size(133, 22);
-            this.OrganizationNameToolStripLabel.Text = "Название организации";
-            // 
-            // RoleToolStripLabel
-            // 
-            this.RoleToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.RoleToolStripLabel.Name = "RoleToolStripLabel";
-            this.RoleToolStripLabel.Size = new System.Drawing.Size(34, 22);
-            this.RoleToolStripLabel.Text = "Роль";
-            // 
-            // UserNameToolStripLabel
-            // 
-            this.UserNameToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.UserNameToolStripLabel.Name = "UserNameToolStripLabel";
-            this.UserNameToolStripLabel.Size = new System.Drawing.Size(34, 22);
-            this.UserNameToolStripLabel.Text = "ФИО";
-            // 
-            // UserIconToolStripLabel
-            // 
-            this.UserIconToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.UserIconToolStripLabel.Name = "UserIconToolStripLabel";
-            this.UserIconToolStripLabel.Size = new System.Drawing.Size(48, 22);
-            this.UserIconToolStripLabel.Text = "Иконка";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(478, 378);
             this.Controls.Add(this.MainTabControl);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Главная форма";
             this.toolStrip1.ResumeLayout(false);
